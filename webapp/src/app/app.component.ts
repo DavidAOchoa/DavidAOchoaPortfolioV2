@@ -51,28 +51,28 @@ export class AppComponent implements OnInit{
     gsap.to(this.document.querySelector('.heading-1'), {
       scrollTrigger: {
         trigger: this.document.querySelector('.heading-1'),
-        scrub: true,
+        scrub: 1.5,
         start: '150% center',
       } as gsap.plugins.ScrollTriggerInstanceVars,
-      color: '#fff',
+      color: '#1F1B22',
       duration: 1.5
     });
     gsap.to(this.document.querySelector('.paragraph'), {
       scrollTrigger: {
         trigger: this.document.querySelector('.paragraph'),
-        scrub: true,
+        scrub: 1.5,
         start: '150% center',
       } as gsap.plugins.ScrollTriggerInstanceVars,
-      color: '#fff',
+      color: '#1F1B22',
       duration: 1.5
     });
     gsap.to(this.document.querySelector('.btn'), {
       scrollTrigger: {
         trigger: this.document.querySelector('.btn'),
-        scrub: true,
+        scrub: 1.5,
         start: '150% center',
       } as gsap.plugins.ScrollTriggerInstanceVars,
-      color: '#fff',
+      color: '#1F1B22',
       duration: 1.5
     });
 
