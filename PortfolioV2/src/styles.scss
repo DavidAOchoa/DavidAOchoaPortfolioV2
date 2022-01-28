@@ -21,6 +21,7 @@ body {
 }
 
 .main {
+  height: auto;
   display: grid;
   grid-template-columns:
     [full-start] minmax(100px, 1fr) [center-start] repeat(
@@ -28,7 +29,7 @@ body {
       [col-start] minmax(min-content, 120px) [col-end]
     )
     [center-end] minmax(100px, 1fr) [full-end];
-  grid-template-rows: min-content calc(100vh - 120px) 100vh;
+  grid-template-rows:auto;
 }
 
 .header {
@@ -41,6 +42,17 @@ color: white;
   height: 120px;
   grid-template-columns: repeat(3, 1fr);
 }
+
+.footer {
+  //   border-right: 1px solid #f0f0f0;
+  //   border-left: 1px solid #f0f0f0;
+  color: white;
+    grid-column: center-start / center-end;
+    grid-row: 1 / 2;
+    display: grid;
+    height: 120px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 
 .first-section {
 //   border-right: 1px solid #f0f0f0;
@@ -84,11 +96,24 @@ color: white;
     font-size: 15px;
   }
 
+  .kurtHeader-4 {
+    margin-right: 20px;    
+    margin-top: -25px;
+    margin-bottom: 30px;
+    grid-row: 3 / 3;
+    grid-column: 6 / 7;
+    justify-self: right;
+    font-size: 15px;
+    font-weight: 500;
+    color: #a8a8a8;
+    font-style: italic;
+  }
+
   .heading-1 {
     grid-row: 2 / 3;
     grid-column: 3 / 7;
     justify-self: center;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 500;
   }
 
@@ -100,6 +125,8 @@ color: white;
     grid-column: 1 / -1;
     grid-gap: 20px;
     position: relative;
+
+  
 
     &__text {
       grid-row: 1 / -1;
@@ -231,5 +258,11 @@ img {
     cursor: pointer;
     block-size: 0%;
      
+  }
+
+  .footer {
+  
+    grid-row: 1 / 2;
+    grid-column: 3 / -1;
   }
 }
