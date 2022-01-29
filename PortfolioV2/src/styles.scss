@@ -201,6 +201,7 @@ img {
   height: 100%;
   display: block;
   object-fit: cover;
+  
 }
 
 .visuals {
@@ -211,15 +212,18 @@ img {
   grid-template-rows: repeat(5, 1fr);
   grid-gap: 30px;
   padding: 30px;
+  
 
   .image-container {
     overflow: hidden;
+    
   }
 
   // Skull Girl
   .image-container:nth-child(1) {
     grid-column: 1 / 6;
     grid-row: 1 / 4;
+    
   }
 
   // Grafitti Wall
