@@ -6,6 +6,7 @@
   padding: 0;
 }
 
+
 html {
   box-sizing: border-box;
 }
@@ -35,7 +36,7 @@ body {
 .header {
 //   border-right: 1px solid #f0f0f0;
 //   border-left: 1px solid #f0f0f0;
-color: white;
+  color: white;
   grid-column: center-start / center-end;
   grid-row: 1 / 2;
   display: grid;
@@ -52,6 +53,8 @@ color: white;
     display: grid;
     height: 120px;
     grid-template-columns: repeat(3, 1fr);
+    font-family: 'Varela Round', sans-serif;
+
   }
 
 .first-section {
@@ -63,6 +66,7 @@ color: white;
   grid-template-columns: repeat(8, 1fr);
   position: relative;
 }
+
 .second-section {
   padding: 0 20px;
 //   border-right: 1px solid #f0f0f0;
@@ -115,6 +119,8 @@ color: white;
     justify-self: center;
     font-size: 25px;
     font-weight: 500;
+    font-family: 'Varela Round', sans-serif;
+    
   }
 
   .info-1 {
@@ -125,6 +131,8 @@ color: white;
     grid-column: 1 / -1;
     grid-gap: 20px;
     position: relative;
+    font-family: 'Varela Round', sans-serif;
+    
 
   
 
@@ -143,8 +151,10 @@ color: white;
       .heading-3 {
         grid-row: 2 / 3;
         grid-column: 1 / -1;
-        font-size: 36px;
+        font-size: 30px;
         font-weight: 500;
+        transform: translateY(80px);
+        
       }
 
       p.paragraph {
@@ -159,7 +169,34 @@ color: white;
     .btn__learn {
         cursor: pointer;
         block-size: 0%;
+        transform: translateY(80px);
     }
+
+    .btn__learn:after {
+      content: "";
+      position: absolute;
+      background-color: #FF93EE;
+      height: 4px;
+      width: 0%;
+      left: 0px;
+      bottom: -6mm;
+      transition: all .8s cubic-bezier(.175,.885,.32,1.275);
+      transform: translate3d(0,5px,0);
+      
+    }
+  
+    .btn__learn:hover {
+      transition: all .9s cubic-bezier(.175,.885,.32,1.275);
+    }
+  
+    .btn__learn:hover:after {
+     width: 10%;  
+    }
+  
+    .btn__learn:visited {
+      color: white;
+    }
+
 
     &__visual {
       grid-column: 5/-1;
@@ -177,11 +214,15 @@ color: white;
   list-style: none;
   display: grid;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 500;
+  
+  
   grid-template-columns: repeat(auto-fit, minmax(170px, min-content));
 
   &__item {
     padding: 15px 20px;
+    
   }
 
   &__link {
@@ -189,7 +230,38 @@ color: white;
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 1.5px;
+    cursor: pointer;
+    padding: 0 10px;
+    text-decoration: none;
   }
+
+  &__link:after {
+    content: "";
+    position: absolute;
+    background-color: #FF93EE;
+    height: 3px;
+    width: 0%;
+    left: 29px;
+    bottom:1mm;
+    transition: all .8s cubic-bezier(.175,.885,.32,1.275);
+    transform: translate3d(0,5px,0);
+    
+  }
+
+  &__link:hover {
+    transition: all .9s cubic-bezier(.175,.885,.32,1.275);
+  }
+
+  &__link:hover:after {
+   width: 25%;  
+  }
+
+  &__link:visited {
+    color: white;
+  }
+
+
+
 }
 .menu-right {
   grid-row: 1 / 2;
@@ -243,17 +315,34 @@ img {
   grid-template-columns: repeat(6, 1fr);
   margin-left: 20px;
 
+  //  Hi im david paragraph
   h1.heading-1 {
     grid-row: 1 / 2;
     grid-column: 1 / 4;
     font-size: 60px;
     font-weight: 600;
+    text-rendering: optimizeLegibility;
+    background-image: linear-gradient(336deg, #D8C47F, #FF93EE, #79AAEE, #D8C47F);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    background-position: -150%;
+
+    animation: animatedText 15.5s infinite alternate-reverse;
+  }
+
+  @keyframes animatedText{
+    to {
+      background-position: 100%;
+    }
   }
 
   p.paragraph {
     grid-row: 2 / 3;
     grid-column: 1 / 3;
     font-size: 25px;
+    font-family: 'Varela Round', sans-serif;
   }
 
   a.btn--start {
@@ -261,12 +350,34 @@ img {
     grid-column: 1 / -1;
     cursor: pointer;
     block-size: 0%;
-     
+    font-family: 'Varela Round', sans-serif;
   }
 
-  .footer {
-  
-    grid-row: 1 / 2;
-    grid-column: 3 / -1;
+  a.btn--start:after {
+    content: "";
+    position: absolute;
+    background-color: #FF93EE;
+    height: 4px;
+    width: 0%;
+    left: 0px;
+    bottom: -6mm;
+    transition: all .8s cubic-bezier(.175,.885,.32,1.275);
+    transform: translate3d(0,5px,0);
+    
   }
+
+  a.btn--start:hover {
+    transition: all .9s cubic-bezier(.175,.885,.32,1.275);
+  }
+
+  a.btn--start:hover:after {
+   width: 5%;  
+  }
+
+  a.btn--start:visited {
+    color: white;
+  }
+
+  
+  
 }

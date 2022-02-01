@@ -3,6 +3,7 @@ import { Component, ElementRef, Inject, OnInit, ViewChild } from '@angular/core'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { endWith } from 'rxjs';
+import * as $ from "jquery";
 
 
 @Component({
@@ -50,7 +51,7 @@ export class HomeComponent implements OnInit {
         scrub: 1.5,
         start: '150% center',
       } as gsap.plugins.ScrollTriggerInstanceVars,
-      color: '#1F1B22',
+      // color: '#1F1B22',
       duration: 1.5
     });
     gsap.to(this.document.querySelector('.paragraph'), {
@@ -106,4 +107,6 @@ export class HomeComponent implements OnInit {
       delay: 0.6,
     });
   }
+
+
 }

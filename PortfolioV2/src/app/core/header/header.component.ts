@@ -43,4 +43,17 @@ export class HeaderComponent implements OnInit {
     });
   }
 
+
+  toAbout() {
+    this.document.getElementById("aboutText")?.scrollIntoView({behavior: "smooth"});
+  }
+  
+  toHome() {
+    this.document.getElementById("header-id")?.scrollIntoView({behavior: "smooth"});
+  }
+  
+  toContact() {
+    // this.document.getElementById("aboutText")?.scrollIntoView({behavior: "smooth"});
+  }
+
 }
