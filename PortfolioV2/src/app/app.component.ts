@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, ElementRef, Inject, OnInit, ViewChild } from '@angular/core';
+import { Component, HostListener, OnInit} from '@angular/core';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { endWith } from 'rxjs';
@@ -25,9 +25,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 export class AppComponent implements OnInit{
+  public innerWidth: any;
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.innerWidth = window.innerWidth;
   }
   title = 'portfoliov2';
 
 }
+
+
