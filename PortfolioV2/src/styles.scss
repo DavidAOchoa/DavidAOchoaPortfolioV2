@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 *,
 *::before,
 *::after {
@@ -32,6 +34,7 @@ body {
     )
     [center-end] minmax(100px, 1fr) [full-end];
   grid-template-rows:auto;
+  justify-content: center;
 }
 
 .header {
@@ -67,6 +70,10 @@ body {
   grid-template-columns: repeat(8, 1fr);
   position: relative;
 }
+
+
+
+
 
 .second-section {
   padding: 0 20px;
@@ -210,6 +217,25 @@ body {
   }
 }
 
+.third-section {
+  grid-column: center-start / center-end;
+  grid-row: 2 / 3;
+  margin-top: 400px;
+  display: grid;
+  position: relative; 
+ 
+  
+  .contentCard {
+    padding: 16px;
+    
+  }
+
+  .example-card {
+    //display: grid;
+    
+  }
+
+}
 
 
 .menu {
@@ -217,13 +243,10 @@ body {
   grid-column: 1 / 3;
   list-style: none;
   display: grid;
-  align-items: center;
   font-family: 'Varela Round', sans-serif;
   font-weight: 500;
-  
-  
   grid-template-columns: repeat(auto-fit, minmax(170px, min-content));
-
+  align-items: center;
   &__item {
     padding: 15px 20px;
    // cursor: pointer;
@@ -255,6 +278,7 @@ body {
     transition: all .8s cubic-bezier(.175,.885,.32,1.275);
     transform: translate3d(0,5px,0);
     
+    
   }
 
   .menu__link__Left:hover {
@@ -274,8 +298,12 @@ body {
 }
 .menu-right {
   grid-row: 1 / 2;
-  grid-column: 3 / -1;
-
+  grid-column: 3 / 4;
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  align-items: center;
+  
+  
 
   .icon
   {
@@ -289,6 +317,8 @@ body {
     color: #76797e;
   }
 }
+
+
 
 img {
   width: 100%;
@@ -335,6 +365,10 @@ img {
   grid-row-gap: 20px;
   grid-template-columns: repeat(6, 1fr);
   margin-left: 20px;
+
+
+  
+
 
   //  Hi im david paragraph
   h1.heading-1 {
@@ -399,3 +433,4 @@ img {
     color: white;
   }
 }
+

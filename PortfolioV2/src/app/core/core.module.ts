@@ -3,6 +3,11 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { FooterComponent } from './footer/footer.component';
+import { ExperienceComponent } from './experience/experience.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 
 
@@ -10,15 +15,17 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [
     HeaderComponent,
     AboutMeComponent,
-    FooterComponent
+    FooterComponent,
+    ExperienceComponent
   ],
   imports: [
-    CommonModule
+    CommonModule, MatCardModule, MatButtonModule, FlexLayoutModule
   ],
   exports: [
     HeaderComponent,
     AboutMeComponent,
-    FooterComponent
+    FooterComponent,
+    ExperienceComponent
   ]
 })
 export class CoreModule { }
