@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ProjectPostCard } from './project-card.model';
+
 
 
 @Component({
@@ -9,9 +9,6 @@ import { ProjectPostCard } from './project-card.model';
 })
 export class ExperienceComponent implements OnInit {
 
-  @Input() 
-  data!: ProjectPostCard;
- 
   constructor() { 
   }
 
