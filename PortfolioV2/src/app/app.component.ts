@@ -16,7 +16,9 @@ gsap.registerPlugin(ScrollTrigger);
   <app-header></app-header>
   <app-home></app-home>
   <app-about-me></app-about-me>
-  <app-experience></app-experience>
+  <app-FrenchPress></app-FrenchPress>
+  <app-gemini></app-gemini>
+  <app-carton></app-carton>
   <app-footer></app-footer>
  
 

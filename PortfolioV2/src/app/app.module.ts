@@ -10,10 +10,12 @@ import { MatSliderModule } from '@angular/material/slider';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    
     
     
   

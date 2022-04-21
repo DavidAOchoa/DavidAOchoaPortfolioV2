@@ -3,10 +3,13 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { FooterComponent } from './footer/footer.component';
-import { ExperienceComponent } from './experience/experience.component';
+
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FrenchPressComponent } from './FrenchPress/FrenchPress.component';
+import { GeminiComponent } from './gemini/gemini.component';
+import { CartonComponent } from './carton/carton.component';
 
 
 
@@ -16,7 +19,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     HeaderComponent,
     AboutMeComponent,
     FooterComponent,
-    ExperienceComponent
+    FrenchPressComponent,
+    GeminiComponent,
+    CartonComponent
   ],
   imports: [
     CommonModule, MatCardModule, MatButtonModule, FlexLayoutModule
@@ -25,7 +30,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     HeaderComponent,
     AboutMeComponent,
     FooterComponent,
-    ExperienceComponent
+   FrenchPressComponent,
+   GeminiComponent,
+   CartonComponent
   ]
 })
 export class CoreModule { }

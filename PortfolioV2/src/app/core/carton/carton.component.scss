@@ -1,5 +1,5 @@
 
-.section-right {
+.section-left {
     padding: 0 20px;
     padding-bottom: 50vh;
     grid-column: center-start / center-end;
@@ -80,38 +80,47 @@
           transform: translateY(80px);
         }
   
-        .heading-3 {
-          grid-row: 2 / 3;
-          grid-column: 1 / -1;
+        .heading-3   {
+        
+            grid-row: 3 / 3;
+            grid-column: 1 / -1;
+            position: absolute;
+            padding-left: 750px;
+            
           font-size: 30px;
           font-weight: 500;
           transform: translateY(80px);
-          
-        }
-  
-        p.paragraph {
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 1.7;
-          grid-row: 3 / 4;
-          width: 75%;
-        }
+       
+          // This is where to change the text in the
+        
       }
-  
+
       .btn__learn {
-          cursor: pointer;
-          block-size: 0%;
-          transform: translateY(80px);
+       
+        grid-row: 3 / 3;
+        grid-column: 1 / -1;
+        position: absolute;
+        padding-left: 750px;
+        margin-top: 180px;
+        cursor: pointer;
+        block-size: 0%;
+        transform: translateY(80px);
+        color: white;
+        text-decoration: none;
+        
+
       }
-  
+
       .btn__learn:after {
+          
         content: "";
         position: absolute;
+        margin-left: 750px;
         background-color: #FF93EE;
         height: 4px;
         width: 0%;
         left: 0px;
-        bottom: -9mm;
+        bottom: -8mm;
         transition: all .8s cubic-bezier(.175,.885,.32,1.275);
         transform: translate3d(0,5px,0);
         
@@ -122,21 +131,33 @@
       }
     
       .btn__learn:hover:after {
-       width: 5%;  
+      width: 5%;  
       }
     
       .btn__learn:visited {
         color: white;
       }
-  
+
+    }
+
+    p.paragraph {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.7;
+      grid-row: 3 / 4;
+      width: 75%;
+    }
+    
   
       &__visual {
-        grid-column: 5/-1;
+        grid-column: 1 / 5;
         grid-row: 1/-1;
         height: 500px;
-        margin-right: 20px;
         overflow: hidden;
         border-radius: 20px;
+        
       }
     }
   }
+
+
