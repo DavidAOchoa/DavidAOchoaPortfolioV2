@@ -63,9 +63,9 @@ export class HomeComponent implements OnInit {
       color: '#1F1B22',
       duration: 1.5
     });
-    gsap.to(this.document.querySelector('.btn'), {
+    gsap.to(this.document.querySelector('.btn--start'), {
       scrollTrigger: {
-        trigger: this.document.querySelector('.btn'),
+        trigger: this.document.querySelector('.btn--start'),
         scrub: 1.5,
         start: '150% center',
       } as gsap.plugins.ScrollTriggerInstanceVars,
@@ -100,7 +100,7 @@ export class HomeComponent implements OnInit {
       y: -30,
       delay: 0.6,
     });
-    gsap.from(this.document.querySelector('.btn'), {
+    gsap.from(this.document.querySelector('.btn--start'), {
       duration: 0.7,
       opacity: 0,
       y: -30,

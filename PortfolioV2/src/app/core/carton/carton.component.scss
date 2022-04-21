@@ -51,7 +51,7 @@
       justify-self: center;
       font-size: 25px;
       font-weight: 500;
-      font-family: 'Varela Round', sans-serif;
+      font-family: 'PT Sans Caption', sans-serif;
       
     }
   
@@ -63,7 +63,7 @@
       grid-column: 1 / -1;
       grid-gap: 20px;
       position: relative;
-      font-family: 'Varela Round', sans-serif;
+      font-family: 'PT Sans Caption', sans-serif;
       
   
     
@@ -81,19 +81,15 @@
         }
   
         .heading-3   {
-        
-            grid-row: 3 / 3;
+            grid-row: 1 / 3;
             grid-column: 1 / -1;
             position: absolute;
             padding-left: 750px;
-            
-          font-size: 30px;
-          font-weight: 500;
-          transform: translateY(80px);
-       
-          // This is where to change the text in the
-        
-      }
+            margin-top: -20px;
+            font-size: 30px;
+            font-weight: 500;
+            transform: translateY(80px);
+        }
 
       .btn__learn {
        
@@ -101,7 +97,7 @@
         grid-column: 1 / -1;
         position: absolute;
         padding-left: 750px;
-        margin-top: 180px;
+        margin-top: 300px;
         cursor: pointer;
         block-size: 0%;
         transform: translateY(80px);
