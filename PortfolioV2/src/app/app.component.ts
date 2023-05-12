@@ -9,19 +9,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 @Component({
   selector: 'app-root',
-  // templateUrl: './app.component.html'
   template: `
-  
-  
   <app-header></app-header>
-  <app-home></app-home>
-  <app-about-me></app-about-me>
-  <app-FrenchPress></app-FrenchPress>
-  <app-gemini></app-gemini>
-  <app-carton></app-carton>
+  <router-outlet></router-outlet>
   <app-footer></app-footer>
- 
-
   `,
   styleUrls: ['./app.component.scss']
 })

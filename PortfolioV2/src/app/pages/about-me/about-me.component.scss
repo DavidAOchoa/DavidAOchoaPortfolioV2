@@ -1,6 +1,6 @@
 
 .section-right {
-    padding: 0 20px;
+    padding: 0px;
     padding-bottom: 50vh;
     grid-column: center-start / center-end;
     grid-row: 3 / 4;
@@ -9,6 +9,7 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(6, min-content);
     grid-gap: 20px;
+    top: 50px;
   
     // box may be unnecessary
     .box {
