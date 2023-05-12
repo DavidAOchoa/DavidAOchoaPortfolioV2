@@ -1,5 +1,5 @@
 # My Portfolio
-This is the code for my portolio to be viewed by any who are interested in how I designed my portfolio.
+
 
 ## MVP
 > To sustain a site that demonstrates my skill in front end development.
